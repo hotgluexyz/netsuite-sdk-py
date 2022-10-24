@@ -54,6 +54,7 @@ COMPLEX_TYPES = {
         'JobSearchBasic',
         'LocationSearchBasic',
         'TransactionSearchBasic',
+        'InboundShipmentSearchBasic',
         'VendorSearchBasic',
         'SubsidiarySearchBasic',
         'EmployeeSearchBasic',
@@ -127,6 +128,7 @@ COMPLEX_TYPES = {
         'VendorPaymentApplyList',
         'VendorPaymentCredit',
         'VendorPaymentCreditList',
+        'InboundShipmentSearch',
         'VendorPaymentApply'
     ],
 
