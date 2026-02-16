@@ -33,8 +33,8 @@ class NetSuiteClient:
     """The Netsuite client class providing access to the Netsuite
     SOAP/WSDL web service"""
 
-    WSDL_URL_TEMPLATE = 'https://{account}.suitetalk.api.netsuite.com/wsdl/v2019_1_0/netsuite.wsdl'
-    DATACENTER_URL_TEMPLATE = 'https://{account}.suitetalk.api.netsuite.com/services/NetSuitePort_2019_1'
+    WSDL_URL_TEMPLATE = 'https://{account}.suitetalk.api.netsuite.com/wsdl/v2025_2_0/netsuite.wsdl'
+    DATACENTER_URL_TEMPLATE = 'https://{account}.suitetalk.api.netsuite.com/services/NetSuitePort_2025_2'
 
     _search_preferences = None
     _passport = None
@@ -82,7 +82,7 @@ class NetSuiteClient:
 
         # default service points to wrong data center. need to create a new service proxy and replace the default one
         self._service_proxy = self._client.create_service(
-            '{urn:platform_2019_1.webservices.netsuite.com}NetSuiteBinding', self._datacenter_url)
+            '{urn:platform_2025_2.webservices.netsuite.com}NetSuiteBinding', self._datacenter_url)
 
         # Parse all complex types specified in :const:`~netsuitesdk.netsuite_types.COMPLEX_TYPES`
         # and store them as attributes of this instance. Same for simple types.
